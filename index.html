@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width initial-scale-1'>
+	<link type='text/css' rel='stylesheet' href='style.css'>
+	<link rel='shortcut icon' type='image/x-icon' href='image/bootstrap.svg'>
+</head>
+<body>
+	<div class='main_content'>
+		<h1 class='main_content_maintext'>Что такое Bootstrap и зачем он нужен?</h1>
+		<img class='main_content_image' src='image/bootstrap.png' alt='bootstrap picture'>
+		<h2 class='nav_pan_head'>Содержание</h2>
+		<ol class='nav_pan'>
+			<li class='nav_pan_el'><a class='nav_pan_link' href='#whatIs-bootstrap'>Что такое bootstrap?</a></li>
+			<li class='nav_pan_el'><a class='nav_pan_link' href='#whatIn'>Что включает в себя bootstrap?</a></li>
+			<li class='nav_pan_el'><a class='nav_pan_link' href='#fromWhatStart'> С чего начать изучение bootstrap</a></li>
+			<li class='nav_pan_el'><a class='nav_pan_link' href='#adv-disadv'>Преимущества и недостатки Bootstrap</a></li>
+			<li class='nav_pan_el'><a class='nav_pan_link' href='#ver'>Какую версию выбрать?</a></li>
+		</ol>
+		<article class='whatIs'>
+			<h1 class='whatIs_maintext' id='whatIs-bootstrap'>Что такое Bootstrap?</h1>
+			<p class='whatIs_mainparag'>
+				Bootstrap — это открытый и бесплатный HTML, CSS и JS фреймворк, который веб-разработчики используют для быстрой вёрстки адаптивных дизайнов сайтов и веб-приложений.
+			</p>
+			<img class='bootstrap-v5' src='image/bootstrap-v5.png' alt='new botstrap logo'>
+			<p class='whatIs_parag'>
+				Фреймворк Bootstrap используют не только независимые разработчики, но иногда и целые компании. На Bootstrap создано очень много различных сайтов, посмотреть их можно на странице <a href='https://expo.getbootstrap.com/'>Bootstrap expo</a>.
+			</p>
+			<p class='whatIs_parag'>
+				Основная область его применения – <span class='whatIs_parag_bold'>это фронтенд разработка сайтов и интерфейсов админок.</span> Среди подобных систем (Foundation, UIkit, Semantic UI, InK и др.) Bootstrap является <span class='whatIs_parag_bold'>самым популярным</span>.
+			</p>
+			<p class='whatIs_parag'>
+				<span class='whatIs_parag_bold'>Почему Bootstrap так популярен?</span> Это связано с тем, что он <span class='whatIs_parag_bold'>позволяет верстать сайты в несколько раз быстрее</span>, чем на «чистом» CSS и JavaScript. А в нашем мире, время – это очень ценный ресурс. Ещё один его аспект – <span class='whatIs_parag_bold'>доступность</span>. Она сводится к тому, что предоставляет возможность даже начинающему веб-разработчику (без глубоких знаний и достаточной практики) <span class='whatIs_parag_bold'>создавать достаточно качественные макеты</span>.
+			</p>
+			<p class='whatIs_parag'>
+				Фреймворк Bootstrap – это набор <span class='whatIs_parag_bold'>набор CSS и JavaScript файлов</span>. Чтобы его использовать эти файлы необходимо <a href='https://bootstrap-4.ru/docs/5.1/getting-started/introduction/'>просто подключить к странице</a>. После этого вам станут доступны <span class='whatIs_parag_bold'>инструменты данного фреймворка: колоночная система (сетка Bootstrap), классы и компоненты</span>.
+			</p>
+			<p class='whatIs_parag'>
+				<span class='whatIs_parag_bold'>Как он работает?</span> Например, чтобы создать кнопку на странице с помощью Bootstrap, достаточно к ссылке или элементу <span class='boot-elem'>button</span> добавить всего несколько классов.
+			</p>
+			<p class='whatIs_parag'>
+				Создание кнопки в Bootstrap 5:
+			</p>
+
+
+
+
+
+			<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(40, 43, 46); color: rgb(224, 226, 228);">&lt;!<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span> Чтобы сделать ссылку в виде кнопки добавим к ней 2 класса: <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">btn</span> и <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">btn-success</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span>&gt;
+&lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">a</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">href</span>="#" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">btn</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">btn-success</span>"&gt;Ссылка, оформленная в виде кнопки&lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">a</span>&gt;</pre>
+
+
+
+
+
+			<p class='whatIs_parag'>
+				<span class='whatIs_parag_bold'>Ну как?</span> Сколько на это потребовалось времени? Да, всего несколько секунд.
+			</p>
+			<p class='whatIs_parag'>
+				А если, например, нужно <span class='whatIs_parag_bold'>создать вкладки</span>. Для этого необходимо всего лишь скопировать готовый HTML фрагмент, и отредактировать его так, чтобы в нём остался код для определённого количества вкладок:
+			</p>
+
+
+
+
+
+
+
+			<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(40, 43, 46); color: rgb(224, 226, 228);">&lt;!<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">Bootstrap</span> 5 <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span>&gt;
+&lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav</span>&gt;
+  &lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-tabs</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">role</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tablist</span>"&gt;
+    &lt;!<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span> атрибут <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">data-bs-target</span> должен указывать на элемент, который необходимо показать <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span>&gt;
+    &lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-link</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">active</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab-section-1</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">data-bs-toggle</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">data-bs-target</span>="<span class="hljs-selector-id" style="color: rgb(147, 199, 99);">#section-1</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">type</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">role</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-controls</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-section-1</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-selected</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">true</span>"&gt;Секция 1&lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span>&gt;
+    &lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-link</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab-section-2</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">data-bs-toggle</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">data-bs-target</span>="<span class="hljs-selector-id" style="color: rgb(147, 199, 99);">#section-2</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">type</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">role</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-controls</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-section-2</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-selected</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">false</span>"&gt;Секция 2&lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span>&gt;
+    &lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-link</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab-section-3</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">data-bs-toggle</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">data-bs-target</span>="<span class="hljs-selector-id" style="color: rgb(147, 199, 99);">#section-3</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">type</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">role</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-controls</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-section-3</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-selected</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">false</span>"&gt;Секция 3&lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">button</span>&gt;
+  &lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span>&gt;
+&lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav</span>&gt;
+&lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab-content</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">p-3</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-tabContent</span>"&gt;
+  &lt;!<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span> атрибут <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span> определяет вкладку <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">--</span>&gt;
+  &lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab-pane</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">fade</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">show</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">active</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">section-1</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">role</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tabpanel</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-labelledby</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-section-1-tab</span>"&gt;
+    ...
+  &lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span>&gt;
+  &lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab-pane</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">section-2</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">role</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tabpanel</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-labelledby</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-section-2-tab</span>"&gt;
+    ...
+  &lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span>&gt;
+  &lt;<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">class</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tab-pane</span> <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">fade</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">id</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">section-3</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">role</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">tabpanel</span>" <span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">aria-labelledby</span>="<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">nav-section-3-tab</span>"&gt;
+    ...
+  &lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span>&gt;
+&lt;/<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">div</span>&gt;</pre>
+
+
+
+
+			<p class='whatIs_parag'>
+				<span class='whatIs_parag_bold'>Всё, вкладки готовы.</span> На это тоже ушли считанные секунды. Правда, потрясающая скорость. В этом сила Bootstrap.
+			</p>
+			<p class='whatIs_parag'>
+				Но, Bootstrap – это не просто набор готовых инструментов (HTML фрагментов, классов, компонентов и плагинов), а хорошо спроектированный фронтенд фреймворк, который довольно просто можно настроить под себя посредством редактирования Sass переменных и использования миксинов.
+			</p>
+		</article>
+		<article class='whatIn' id='whatIn'>
+			<h1 class='whatIs_maintext'>Что включает в себя Bootstrap?</h1>
+			<p class='whatIs_parag'>
+				Bootstrap состоит из:
+			</p>
+			<ul class='whatIn_list'>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						инструментов для создания макета (обёрточных контейнеров, мощной системы сеток, гибких медиа-объектов, адаптивных утилитных классов);
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						классов для стилизации базового контента: текста, изображений, кода, таблиц и <span class='boot-elem'>figure</span>;
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						готовых компонентов: кнопок, форм, горизонтальных и вертикальных навигационных панелей, слайдеров, выпадающих списков, аккордеонов, модальных окон, всплывающих подсказок и др.;
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						утилитных классов для решения традиционных задач наиболее часто возникающими перед веб-разработчиками: выравнивание текста, отображение и скрытие элементов, задания цвета, фона, <span class='boot-elem'>margin</span> и <span class='boot-elem'>padding</span> отступов, и т.д.
+					</p>
+				</li>				
+			</ul>
+		</article>
+		<article class='fromWhatStart' id='fromWhatStart'>
+			<h1 class='whatIs_maintext'>С чего начать изучение Bootstrap?</h1>
+			<p class='whatIs_parag'>
+				Первое, что нам необходимо — это <span class='whatIs_parag_bold'>скачать фреймворк и подключить его к странице</span>. Как это выполнить детально описано в документации Bootstrap <a href='https://bootstrap-4.ru/docs/5.1/getting-started/introduction/'>здесь</a>. Там все подробно и понятно написано.
+			</p>
+			<p class='whatIs_parag'>
+				После того как мы это сделаем обычно возникает следующий вопрос: «<span class='whatIs_parag_bold'>А что дальше? Как использовать Bootstrap?</span>». На самом деле тут нет ничего сложного, создавать страницы с использованием Bootstrap довольно просто.
+			</p>
+			<p class='whatIs_parag'>
+				Сначала необходимо <span class='whatIs_parag_bold'>изучить сетку</span> и попрактиковаться на ней верстать макеты страниц и создавать разметку блоков. Изучить её можно <a href='https://bootstrap-4.ru/docs/5.1/layout/grid/'>тут</a>. А также, там же, можно выбрать необходимую вам версию Bootstrap.
+			</p>
+			<p class='whatIs_parag'>
+				К сведению, сетка в «Bootstrap 3.x» построена на ,<span class='boot-elem'>float</span>, а в «4.x» и «5.x» – на <span class='boot-elem'>flexbox</span>.
+			</p>
+			<p class='whatIs_parag'>
+				После того как разберётесь с сеткой нужно изучить <span class='whatIs_parag_bold'>компоненты Bootstrap</span> (как они верстаются и настраиваются) и научиться их вставлять в нужные места страницы.
+			</p>
+			<p class='whatIs_parag'>
+				Это минимальные задачи, которые перед собой необходимо поставить, чтобы научиться верстать сайты и веб-приложения на Bootstrap.
+			</p>
+			<p class='whatIs_parag'>
+				Ну если ваша задача не просто использовать Bootstrap, а что-то в нём изменять, переделывать, то без хороших знаний CSS тут конечно уже не обойтись. Некоторые вещи, конечно, можно настроить через изменения SCSS переменных и применения миксинов, а другие – нет. И это касается любых фреймворков.
+			</p>
+		</article>
+		<article class='adv-disadv' id='adv-disadv'>
+			<h1 class='whatIs_maintext'>Преимущества и недостатки Bootstrap.</h1>
+			<p class='whatIs_parag'>
+				Преимущества Bootstrap при его использовании для frontend разработки сайтов и интерфейсов админок:
+			</p>
+			<ul class='whatIn_list'>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						<span class='whatIs_parag_bold'>высокая скорость</span> создания качественной адаптивной вёрстки даже начинающими веб-разработчиками (достигается это благодаря использованию готовых классов и компонентов, созданных профессионалами);
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						<span class='whatIs_parag_bold'>кроссбраузерность и кроссплатформеннось</span> (корректное отображение и работа сайта во всех поддерживаемых этим фреймворком браузерах и операционных системах);
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						<span class='whatIs_parag_bold'>наличие большого количества готовых хорошо продуманных компонентов</span>, протестированных огромным сообществом веб-разработчиков на различных устройствах;
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						<span class='whatIs_parag_bold'>возможность настройки под свой проект</span>, достигается это посредством изменения SCSS переменных и использования миксинов (можно изменить количество колонок, цвета, радиус скруглений, отступы между колонками и т.д.);
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						<span class='whatIs_parag_bold'>низкий порог вхождения</span>; для работы с фреймворком не обязательно иметь «глубокие» знания по HTML, CSS, JavaScript и jQuery (достаточно знать только основы этих технологий);
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						<span class='whatIs_parag_bold'>однородность дизайна и его согласованность</span> между различными компонентами (в Bootstrap все компоненты выполнены в едином стиле);
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						<span class='whatIs_parag_bold'>наличие огромного количества сообществ и обучающих материалов</span>; при желании это поможет не только хорошо разобраться в фреймворке, но и найти ответы практически на любые возникающие у вас вопросы.
+					</p>
+				</li>				
+			</ul>
+			<p class='whatIs_parag'>
+				Фреймворк Bootstrap – это <span class='whatIs_parag_bold'>проект с открытым исходным кодом</span>, доступным на Github. Он имеет лицензию MIT. Это означает, что его можно бесплатно использовать как в открытых, так и в коммерческих проектах.
+			</p>
+			<p class='whatIs_parag'>
+				Bootstrap, конечно, хороший инструмент, но на нём <span class='whatIs_parag_bold'>верстают далеко не всё</span>. Его, например не имеет смысла использовать для:
+			</p>
+			<ul class='whatIn_list'>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						создания фронтендов проектов с уникальным дизайном;
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						разработки проектов, в которых заказчик готов платить за проект на «чистом» CSS и JavaScript (в большинстве случаях такая разработка осуществляется в команде, в которой каждый её участник выполняет какой-то свой определенный набор функций);
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						вёрстки личных проектов, если у вас есть достаточно количество времени и ваш уровень знаний по HTML, CSS и JavaScript является достаточным, чтобы это осуществить.
+					</p>
+				</li>				
+			</ul>
+			<p class='whatIs_parag'>
+				Bootstrap, как и большинство подобных фреймворков, <span class='whatIs_parag_bold'>имеет недостатки</span>. Среди них можно отметить следующие:
+			</p>
+			<ul class='whatIn_list'>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						более большой размер конечных css и js-файлов проекта, чем они получились, если бы мы всё это создавали самостоятельно (это связано с тем, что стили фреймворка и его js-код содержат универсальный код (на все случаи жизни), а по факту для конкретного проекта из всего этого может потребоваться только часть);
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						сложность использования Bootstrap для вёрстки сайтов с уникальным дизайном, т.к. разработка в этом случае будет сопровождаться значительным переписыванием его кода и простой настройкой Bootstrap переменных тут уже не обойтись.
+					</p>
+				</li>				
+			</ul>
+			<p class='whatIs_parag'>
+				Первый недостаток можно немного «сгладить», если выполнить самостоятельную сборку проекта из исходных кодов и включить в неё только те компоненты, которые нам нужны. В этом случае код этого фреймворка будет значительно меньше.
+			</p>
+		</article>
+		<article class='version' id='ver'>
+			<h1 class='whatIs_maintext'>Какую версию Bootstrap выбрать?</h1>
+			<p class='whatIs_parag'>
+				Для разработки большинства веб-проектов <span class='whatIs_parag_bold'>лучше использовать последнюю версию Bootstrap в выбранной ветке</span>.
+			</p>
+			<p class='whatIs_parag'>
+				На текующий момент:
+			</p>
+			<ul class='whatIn_list'>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						в v5 - это 5.1.3 (<a href='https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-dist.zip'>скачать</a>);
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						в v4 - это 4.6.1 (<a href='https://github.com/twbs/bootstrap/releases/download/v4.6.1/bootstrap-4.6.1-dist.zip'>скачать</a>);
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						в v3 - это 3.4.1 (<a href='https://github.com/twbs/bootstrap/releases/download/v3.4.1/bootstrap-3.4.1-dist.zip'>скачать</a>);
+					</p>
+				</li>				
+			</ul>
+			<p class='whatIs_parag'>
+				Bootstrap 5 рекомендуется для проектов, которые будут использоваться только в современных браузерах (поддержка IE и других браузеров не нужна). В других случаях - Bootstrap 4.
+			</p>
+			<p class='whatIs_parag'>
+				<span class='whatIs_parag_bold'>Что нового в Bootstrap 5</span>:
+			</p>
+			<ul class='whatIn_list'>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						нет зависимости от библиотеки jQuery, все плагины переписаны на чистом JavaScript;
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						библиотека Popper обновлена до v2.x с v1.x;				
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						не поддерживаются Internet Explorer 10 и 11, Microsoft Edge <16, Firefox <60, Safari <10, iOS Safari <10, Chrome <60 и Android <6;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						добавлен новый брекпойнт в сетку (<span class='boot-elem'>xxl</span> для 1400px и выше);
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						новые классы <span class='boot-elem'>.g-*</span>, <span class='boot-elem'>.gx-*</span> и <span class='boot-elem'>.gy-*</span> для указания горизонтальных и вертикальных отступов между ячейками;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						добавлен новый компонент offcanvas;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						удален компонент Media, его реализацию предлагают выполнять с помощью утилитных классов Bootstrap;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						улучшен раздел по формам в документации, и добавлена возможность создания в <span class='boot-elem'>input</span> плавающего <span class='boot-elem'>label</span>.
+					</p>
+				</li>				
+			</ul>
+			<p class='whatIs_parag'>
+				Третью версию в основном имеет смысл использовать, если нужна поддержка «старых» браузеров (IE8 и IE9).
+			</p>
+			<p class='whatIs_parag'>
+				<span class='whatIs_parag_bold'>Основные отличия Bootstrap 4 от Bootstrap 3</span>:
+			</p>
+			<ul class='whatIn_list'>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						не поддерживает IE8, IE9 и iOS6 (v4 теперь только IE10+ и iOS7+);
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						сетка и другие компоненты построены на флексах, а не на float;				
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						исходный код стилей написан на Sass, а не на Less;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						размеры, указываются в rem и em, а не в px;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						размер шрифта увеличен с 14px до 16px;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						увеличено количество брекпойнтов в сетки (в v4 - 5, в v3 - 4);
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						удалены компоненты Panels, Thumbnails и Wells, вместо них добавлен Cards;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						удалены иконочный шрифт Glyphicons и jQuery плагин Affix;
+					</p>
+				</li>	
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						обновлены почти все компоненты;
+					</p>
+				</li>
+				<li class='whatIn_list_elem'>
+					<p class='whatIs_parag'>
+						работа всплывающих подсказок (Tooltips) и блоков с контентов (Popovers) построена на библиотеке Popper JS.
+					</p>
+				</li>			
+			</ul>
+			<p class='whatIs_parag'>
+				Компоненты Bootstrap 3 в IE8 и некоторых других версиях отображаются без градиентов, теней и закруглённых углов. Это связано с тем, что в них нет поддержки используемых для этих целей CSS3 свойств.
+			</p>
+			<p class='whatIs_parag'>
+				Это вся основная информация, которая необходима для того что понять для чего используется Bootstrap и решить для себя стоит ли его использовать именно вам в своих проектах. Всем добра!
+			</p>
+
+		</article>
+	</div>
+	<script src='up-button.js'></script>
+</body>
+</html>

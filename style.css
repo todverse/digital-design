@@ -1,0 +1,136 @@
+body {
+	font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.button_up {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	left: 90%;
+	top: 90%;
+	border: none;
+	border-radius: 5px;
+	background-color: transparent;
+	background-image: url(image/uparrow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	animation-name: show;
+	animation-duration: 1s;
+}
+@keyframes show {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+.button_up:hover {
+	cursor: pointer;
+	background-color: rgb(240,240,240);
+}
+.main_content {
+	width: 70%;
+	margin: auto;
+	padding: 10px;
+}
+.main_content_maintext {
+	font-weight: 200;
+}
+.main_content_maintext::after {
+	content: "";
+	background-image: url(image/bootstrap.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: -1;
+	transform: translate(20px, 0px);
+}
+.main_content_image {
+	width: 100%;
+	min-width: 300px;
+}
+.nav_pan_head {
+	font-weight: 200;
+}
+.nav_pan {
+	font-size: 1.3em;
+}
+.nav_pan_link {
+	text-decoration: none;
+	color: rgb(100,100,240);
+}
+.nav_pan_link:hover {
+	color: rgb(100,100,150);
+}
+.whatIs_maintext {
+	font-size: 2em;
+	font-weight: 200;
+}
+.whatIs_maintext::before {
+	content: "";
+	background-image: url(image/h1.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: -1;
+	transform: translate(-35px, -35px);
+}
+.whatIs_mainparag {
+	font-weight: 800;
+	font-size: 1.3em;
+}
+.bootstrap-v5 {
+	width: 50%;
+	min-width: 300px;
+	display: block;
+	margin: auto;
+}
+.whatIs_parag {
+	padding-top: 20px;
+	font-size: 1.2em;
+}
+.whatIs_parag_bold {
+	font-weight: 700;
+}
+.boot-elem {
+	background-color: rgb(230,230,230);
+	border-radius: 5px;
+	padding: 3px;
+}
+.whatIn_list .whatIs_parag {
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+}
+.whatIn_list_elem {
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+	.main_content {
+		width: 95%;
+	}
+	.button_up {
+		left: 80%;
+	}
+	.main_content_image {
+		min-width: 220px;
+	}
+	.bootstrap-v5 {
+		min-width: 220px;
+	}
+	.main_content_maintext::after {
+		content: none;
+	}
+	.whatIs_parag {
+		font-size: 1em;
+	}
+	.whatIs_maintext {
+		font-size: 1.7em;
+	}
+}
